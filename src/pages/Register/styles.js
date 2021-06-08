@@ -19,12 +19,6 @@ export const Container = styled.div`
     margin-bottom: 24px;
     line-height: 1.6em;
     text-align: center;
-
-    @media (max-width: 767px) {
-      font-size: 32px;
-      margin-bottom: 32px;
-      width: 80%;
-    }
   }
 
   form {
@@ -80,6 +74,14 @@ export const Container = styled.div`
 
     img {
       width: 10%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 32px;
+      width: 80%;
     }
   }
 `;

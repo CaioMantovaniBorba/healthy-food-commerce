@@ -19,10 +19,6 @@ export const Search = styled.div`
   flex-direction: column;
   margin-left: 256px;
 
-  @media (max-width: 1024px) {
-    margin-left: 0;
-  }
-
   h1 {
     width: 330px;
     font-size: 48px;
@@ -30,20 +26,10 @@ export const Search = styled.div`
     color: var(--secondary-color);
     margin-bottom: 24px;
     line-height: 1.6em;
-
-    @media (max-width: 767px) {
-      font-size: 32px;
-      margin-bottom: 32px;
-      width: 80%;
-    }
   }
 
   div {
     display: flex;
-
-    @media (max-width: 767px) {
-      max-width: 330px;
-    }
 
     input {
       height: 52px;
@@ -70,6 +56,22 @@ export const Search = styled.div`
       border-radius: 4px;
       padding: 8px;
     }
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 32px;
+      width: 80%;
+    }
+
+    div {
+      max-width: 330px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
   }
 `;
 

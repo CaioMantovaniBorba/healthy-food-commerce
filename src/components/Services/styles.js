@@ -21,19 +21,6 @@ export const Right = styled.div`
   width: 400px;
   margin-right: 368px;
 
-  @media (max-width: 1024px) {
-    width: 600px;
-    margin-right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  @media (max-width: 767px) {
-    width: 80%;
-  }
-
   h1 {
     color: #2d3561;
     font-size: 32px;
@@ -61,5 +48,18 @@ export const Right = styled.div`
     color: #fff;
     border: 0;
     border-radius: 6px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 600px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 767px) {
+    width: 80%;
   }
 `;

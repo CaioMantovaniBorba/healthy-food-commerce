@@ -16,10 +16,6 @@ export const Top = styled.div`
   flex-direction: column;
   width: 480px;
 
-  @media (max-width: 767px) {
-    width: 90%;
-  }
-
   h1 {
     font-size: 32px;
     font-family: 'Montserrat', sans-serif;
@@ -34,8 +30,12 @@ export const Top = styled.div`
     margin-bottom: 32px;
     line-height: 1.8em;
     text-align: center;
+  }
 
-    @media (max-width: 767px) {
+  @media (max-width: 767px) {
+    width: 90%;
+
+    p {
       font-size: 12px;
     }
   }
@@ -61,18 +61,8 @@ export const Card = styled.div`
   background: #fff;
   border-radius: 8px;
 
-  @media (max-width: 767px) {
-    width: 300px;
-    flex-direction: column;
-  }
-
   img {
     margin-right: 16px;
-
-    @media (max-width: 767px) {
-      width: 100%;
-      border-radius: 8px;
-    }
   }
 
   div {
@@ -81,10 +71,6 @@ export const Card = styled.div`
     justify-content: center;
     flex-direction: column;
 
-    @media (max-width: 767px) {
-      align-items: center;
-    }
-
     h1 {
       color: var(--secondary-color);
       font-size: 24px;
@@ -92,13 +78,6 @@ export const Card = styled.div`
       margin-bottom: 8px;
       width: 200px;
       line-height: 1.4em;
-
-      @media (max-width: 767px) {
-        font-size: 20px;
-        width: 100%;
-        margin: 16px 0;
-        text-align: center;
-      }
     }
 
     button {
@@ -111,8 +90,29 @@ export const Card = styled.div`
       font-size: 16px;
       font-family: 'Mulish', sans-serif;
       color: #fff;
+    }
+  }
 
-      @media (max-width: 767px) {
+  @media (max-width: 767px) {
+    width: 300px;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    div {
+      align-items: center;
+
+      h1 {
+        font-size: 20px;
+        width: 100%;
+        margin: 16px 0;
+        text-align: center;
+      }
+
+      button {
         margin-bottom: 16px;
       }
     }

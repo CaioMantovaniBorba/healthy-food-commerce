@@ -13,10 +13,6 @@ export const Top = styled.div`
   width: 480px;
   margin: 0 auto;
 
-  @media (max-width: 767px) {
-    max-width: 80%;
-  }
-
   h1 {
     font-size: 32px;
     font-family: 'Montserrat', sans-serif;
@@ -31,6 +27,10 @@ export const Top = styled.div`
     margin-bottom: 32px;
     line-height: 1.8em;
     text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 80%;
   }
 `;
 
@@ -49,14 +49,14 @@ export const Card = styled.div`
 
   img {
     margin-bottom: 16px;
-
-    @media (max-width: 767px) {
-      max-width: 300px;
-    }
   }
 
   @media (max-width: 767px) {
     max-width: 300px;
+
+    img {
+      max-width: 300px;
+    }
   }
 `;
 

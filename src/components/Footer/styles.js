@@ -8,22 +8,9 @@ export const Container = styled.div`
   height: 103px;
   background: #eee;
 
-  @media (max-width: 768px) {
-    background: var(--primary-color);
-  }
-
-  @media (max-width: 767px) {
-    flex-direction: column;
-    background: var(--primary-color);
-  }
-
   span {
     font-size: 14px;
     color: var(--secondary-color);
-
-    @media (max-width: 768px) {
-      color: #fff;
-    }
   }
 
   a {
@@ -33,9 +20,22 @@ export const Container = styled.div`
     &:first-child {
       margin-right: 16px;
     }
+  }
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
+    background: var(--primary-color);
+
+    span {
+      color: #fff;
+    }
+
+    a {
       color: var(--secondary-color);
     }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    background: var(--primary-color);
   }
 `;

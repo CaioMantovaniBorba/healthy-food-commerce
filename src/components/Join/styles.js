@@ -20,10 +20,6 @@ export const Search = styled.div`
   flex-direction: column;
   margin-left: 368px;
 
-  @media (max-width: 1024px) {
-    margin-left: 0;
-  }
-
   h1 {
     font-size: 32px;
     font-family: 'Montserrat', sans-serif;
@@ -31,18 +27,10 @@ export const Search = styled.div`
     margin-bottom: 32px;
     width: 360px;
     line-height: 1.4em;
-
-    @media (max-width: 767px) {
-      width: 80%;
-    }
   }
 
   div {
     display: flex;
-
-    @media (max-width: 767px) {
-      max-width: 330px;
-    }
 
     input {
       height: 52px;
@@ -69,6 +57,20 @@ export const Search = styled.div`
       font-family: Muli;
       color: #fff;
     }
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      width: 80%;
+    }
+
+    div {
+      max-width: 330px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
   }
 `;
 
